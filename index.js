@@ -1,9 +1,8 @@
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
-
 const app = express();
-
+const port = 80;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -53,7 +52,7 @@ app.post('/shorten', (req, res) => {
     });
 });
 
-app.get('/urls', (req, res) => {
+app.get('/urls', (req, res) => { // Remove this code from lines 56-58 if you don't want your URLs to be publicly visible
     res.json(urls);
 });
 
@@ -73,7 +72,6 @@ app.get('/:shortUrl', (req, res) => {
     }
 });
 
-const port = 80;
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+    console.log(`Server listening localhost:${port}`);
 });
