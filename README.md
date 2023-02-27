@@ -2,7 +2,7 @@
 NodeJS short url
 
 # General
-I wrote a small script in nodejs with which used websites can shorten url without having to wait long, I've only just started and that's just an idea, but I'll definitely update it in the future. If you have any problems or comments, please feel free to contact me via e-mail or GitHub.
+I wrote a small script in nodejs with which used websites can shorten url without having to wait long, I've only just started and that's just an idea so its all simple code, but I'll definitely update it in the future. If you have any problems or comments, please feel free to contact me via e-mail or GitHub. 
 
 My e-mail: contact@roudges.eu
 
